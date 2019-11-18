@@ -4,23 +4,8 @@ The goal of this sample to is get started with REST from client side.
 
 We will get as starting point an application that displays a list of harcoded items.
 
-# Excercise
 
-- Start with the starting implementation that is located under the folder *00_start*.
-
-- Let's install the needed dependencies.
-
-```bash
-npm install
-```
-
-- And start the application to check that everything is working as expected.
-
-```bash
-npm start
-```
-
-- If we check the current implementation we are getting a list of harcoded data. The related `service` that provides data can be found in _src/API/carsApi.double.js_
+- Initial implementation of the service was:
 
 ```javascript
 const data = [
@@ -68,16 +53,22 @@ export const addCar = (car) => {
 };
 ```
 
-- Edit _src/API/carsApi.js_ to implent functions above with _axios_ or _native fetch_ or _XMLHttpRequest_
 
+# Implementations
 
-- Hints:
+- There are two implementation one usint `axios` and another using `fetch` located under the folder *axios implementation* and *fetch implementation*. Access to any of them to run it.
 
-  - Copy and paste the _double_ functions into _src/API/carsApi.js_, this way yo already have the right signatures.
-  - Start implementation with _getAllCars()_, follow with _getCarById(id)_, and for last _addCar(car)_.
-  - _getAllCars() url_: 'http://localhost:3050/api/cars'.
-  - _getAllCarById(2) url_: 'http://localhost:3050/api/cars/2'.
-  - _addCar url_: 'http://localhost:3050/api/cars'. `POST` http verb.
+- Let's install the needed dependencies.
+
+```bash
+npm install
+```
+
+- And start the application to check that everything is working as expected.
+
+```bash
+npm start
+```
 
 - Start server:
 
@@ -95,9 +86,14 @@ npm start
 
 * Check that server is running by pasting this url on browser:_http://localhost:3050/api/cars_
 
-# Optional
 
-As optional part implement in more than one way the real API.
+- Hints:
+
+  - Start implementation with _getAllCars()_, follow with _getCarById(id)_, and for last _addCar(car)_.
+  - _getAllCars() url_: 'http://localhost:3050/api/cars'.
+  - _getAllCarById(2) url_: 'http://localhost:3050/api/cars/2'.
+  - _addCar url_: 'http://localhost:3050/api/cars'. `POST` http verb.
+
 
 # About Basefactor + Lemoncode
 
